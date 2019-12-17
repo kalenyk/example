@@ -1,0 +1,76 @@
+.dropdown{
+  position: relative;
+  display: inline-block;
+
+  width:150px;
+
+    &:hover .dropdown__content{
+      display: block;
+    }
+
+    &__button{
+      background-color: #4CAF50;
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      width: 100%;
+      border: none;
+      cursor: pointer;
+
+
+    }
+
+    &__content{
+
+      display: none;
+      position: absolute;
+      width:100%;
+      background-color: #f9f9f9;
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+      z-index: 1;
+
+        & button{
+          font-size: 16px;
+          cursor: pointer;
+          width: 100%;
+          background:none;
+          padding:5px 0;
+          border:none;
+
+            &:hover{
+              background-color: darkgray;
+            }
+        }
+
+        & ul{
+          list-style: none;
+        }
+    }
+}
+
+.markersBtns{
+  margin: 0 10px;
+  background-color: darkblue;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  width: 150px;
+  border: none;
+  cursor: pointer;
+}
+
+.buttonsWrap{
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.geoWarning {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-weight: 500;
+  border: 10px solid red;
+}
